@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nisar Uddin — Front-End Developer & AI Application Builder. Computer Engineering student at HITEC University, Pakistan. Building and shipping web applications.">
+    <meta name="author" content="Nisar Uddin">
+    <title>Nisar Uddin — Front-End Developer & AI Application Builder</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/n-logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         NAVIGATION
+         ============================================================ -->
+    <header class="nav-header" id="nav-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#home" class="nav-logo">
+                <img src="assets/n-logo.png" alt="Nisar Uddin logo" class="nav-logo-img">
+                <span class="nav-logo-text">Nisar Uddin</span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                    <i class="fa-solid fa-moon theme-icon-moon"></i>
+                    <i class="fa-solid fa-sun theme-icon-sun"></i>
+                </button>
+
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars mobile-icon-bars"></i>
+                    <i class="fa-solid fa-xmark mobile-icon-close"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ============================================================
+             HERO SECTION
+             ============================================================ -->
+        <section id="home" class="hero">
+
+            <!-- Decorative background elements -->
+            <div class="hero-bg-grid" aria-hidden="true"></div>
+            <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+            <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <div class="hero-status">
+                        <span class="hero-status-dot"></span>
+                        Available for internships
+                    </div>
+
+                    <p class="hero-kicker">Hello, I'm</p>
+                    <h1 class="hero-name">Nisar Uddin</h1>
+                    <p class="hero-tagline">Front-End Developer &amp; AI Application Builder</p>
+                    <p class="hero-oneliner">I don't just study code. I ship it.</p>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="assets/nisar-uddin-cv.pdf" class="btn btn-secondary" download>
+                            Download CV
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-links">
+                        <a href="https://github.com/nisaruddin-dev" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/nisar-uddin-7521b9283/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:numasters802@gmail.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-logo-wrap">
+                        <div class="hero-logo-glow" aria-hidden="true"></div>
+                        <div class="hero-logo-ring" aria-hidden="true"></div>
+                        <img src="assets/n-logo.png" alt="Nisar Uddin N logo" class="hero-logo">
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="hero-scroll" aria-label="Scroll to about">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+
+        <!-- ============================================================
+             ABOUT SECTION
+             ============================================================ -->
+        <section id="about" class="about section">
+            <div class="section-inner">
+                <p class="section-kicker">About Me</p>
+                <h2 class="section-title">Building things that actually work.</h2>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I am a Computer Engineering student at HITEC University, Taxila. In the last few months,
+                            I have shipped 8 public GitHub projects — including 3 live Python AI applications and
+                            4 front-end games and tools built with vanilla HTML, CSS, and JavaScript.
+                        </p>
+                        <p>
+                            Currently serving as Joint Secretary of the IEEE Student Branch, where I coordinate
+                            events for 200+ attendees. My approach is simple: <strong>front-end craft first,
+                            AI as an amplifier.</strong>
+                        </p>
+                        <p>
+                            I am seeking internships and junior front-end roles where I can contribute to real
+                            products, learn from experienced teams, and keep shipping code.
+                        </p>
+
+                        <a href="assets/nisar-uddin-cv.pdf" class="btn btn-outline" download>
+                            Download Full CV
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+
+                    <div class="about-facts">
+                        <div class="fact-card">
+                            <div class="fact-number">8</div>
+                            <div class="fact-label">Public Projects</div>
+                        </div>
+                        <div class="fact-card">
+                            <div class="fact-number">3</div>
+                            <div class="fact-label">Live AI Apps</div>
+                        </div>
+                        <div class="fact-card">
+                            <div class="fact-number">200+</div>
+                            <div class="fact-label">Event Attendees</div>
+                        </div>
+                        <div class="fact-card">
+                            <div class="fact-number">2029</div>
+                            <div class="fact-label">Expected Graduation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             SKILLS SECTION
+             ============================================================ -->
+        <section id="skills" class="skills section">
+            <div class="section-inner">
+                <p class="section-kicker">Skills</p>
+                <h2 class="section-title">What I work with.</h2>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                        <div class="skill-name">HTML5</div>
+                        <div class="skill-bar" data-level="90">
+                            <div class="skill-bar-fill"></div>
+                        </div>
+                        <div class="skill-percent">90%</div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                        <div class="skill-name">CSS3</div>
+                        <div class="skill-bar" data-level="88">
+                            <div class="skill-bar-fill"></div>
+                        </div>
+                        <div class="skill-percent">88%</div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+                        <div class="skill-name">JavaScript (ES6+)</div>
+                        <div class="skill-bar" data-level="65">
+                            <div class="skill-bar-fill"></div>
+                        </div>
+                        <div class="skill-percent">65%</div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar" data-level="60">
+                            <div class="skill-bar-fill"></div>
+                        </div>
+                        <div class="skill-percent">60%</div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="skill-name">Streamlit</div>
+                        <div class="skill-bar" data-level="60">
+                            <div class="skill-bar-fill"></div>
+                        </div>
+                        <div class="skill-percent">60%</div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+                        <div class="skill-name">Google Gemini API</div>
+                        <div class="skill-bar" data-level="80">
+                            <div class="skill-bar-fill"></div>
+                        </div>
+                        <div class="skill-percent">80%</div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-php"></i></div>
+                        <div class="skill-name">PHP / Laravel</div>
+                        <div class="skill-bar" data-level="65">
+                            <div class="skill-bar-fill"></div>
+                        </div>
+                        <div class="skill-percent">65%</div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+                        <div class="skill-name">Git / GitHub</div>
+                        <div class="skill-bar" data-level="75">
+                            <div class="skill-bar-fill"></div>
+                        </div>
+                        <div class="skill-percent">75%</div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-plug"></i></div>
+                        <div class="skill-name">REST API Integration</div>
+                        <div class="skill-bar" data-level="70">
+                            <div class="skill-bar-fill"></div>
+                        </div>
+                        <div class="skill-percent">70%</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             PROJECTS SECTION
+             ============================================================ -->
+        <section id="projects" class="projects section">
+            <div class="section-inner">
+                <p class="section-kicker">Projects</p>
+                <h2 class="section-title">Things I have built and shipped.</h2>
+                <p class="section-subtitle">Every project is public. Every link is live. Click and verify.</p>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 — Rahbar AI -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project-rahbar.png" alt="Rahbar AI interface">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Rahbar AI</h3>
+                            <p class="project-desc">
+                                Admission decision-support platform for Pakistani FSc students —
+                                verified aggregates, deadline status, and document checklists.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Streamlit</span>
+                                <span>Gemini API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://rahbar-ai.streamlit.app/" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fa-solid fa-external-link"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/nisaruddin-dev/rahbar-ai" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 — ThreatLens -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project-threatlens.png" alt="ThreatLens interface">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">ThreatLens</h3>
+                            <p class="project-desc">
+                                Cybersecurity analyzer for IPs, domains, and URLs — combining
+                                VirusTotal, WHOIS, and AI-powered insights.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Streamlit</span>
+                                <span>VirusTotal API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://threatlens-io.streamlit.app/" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fa-solid fa-external-link"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/nisaruddin-dev/threatlens" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 — Resume Scanner -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project-resume-scanner.png" alt="Resume Scanner interface">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Resume Scanner</h3>
+                            <p class="project-desc">
+                                ATS heuristic analyzer for PDF/DOCX resumes — scores seven
+                                dimensions and suggests AI-powered improvements.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Streamlit</span>
+                                <span>pdfplumber</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://resume-scanner-io.streamlit.app/" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fa-solid fa-external-link"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/nisaruddin-dev/resume-scanner" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 — Neon Pulse -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project-neon-pulse.png" alt="Neon Pulse game interface">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Neon Pulse</h3>
+                            <p class="project-desc">
+                                Cyberpunk rhythm arcade game with dynamic difficulty scaling
+                                and combo tracking.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nisaruddin-dev/neon-pulse" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 — Memory Match Deluxe -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project-memory-match.png" alt="Memory Match Deluxe game interface">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Memory Match Deluxe</h3>
+                            <p class="project-desc">
+                                Responsive 8×8 memory game with score tracking, best-record
+                                persistence, and timer.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nisaruddin-dev/memory-match" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 — Quetta Builders -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/project-quetta-builders.png" alt="Quetta Builders website">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Quetta Builders</h3>
+                            <p class="project-desc">
+                                Full-stack construction company website with admin panel for
+                                services, projects, and content.
+                            </p>
+                            <div class="project-tags">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nisaruddin-dev/quetta-builders" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             CONTACT SECTION
+             ============================================================ -->
+        <section id="contact" class="contact section">
+            <div class="section-inner">
+                <p class="section-kicker">Contact</p>
+                <h2 class="section-title">Let's build something.</h2>
+                <p class="section-subtitle">
+                    I am currently open to internships and junior front-end roles.
+                    If you have an opportunity or just want to connect, my inbox is open.
+                </p>
+
+                <div class="contact-grid">
+
+                    <div class="contact-info">
+                        <a href="mailto:numasters802@gmail.com" class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">numasters802@gmail.com</div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/nisaruddin-dev" target="_blank" rel="noopener" class="contact-item">
+                            <i class="fa-brands fa-github"></i>
+                            <div>
+                                <div class="contact-label">GitHub</div>
+                                <div class="contact-value">github.com/nisaruddin-dev</div>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/nisar-uddin-7521b9283/" target="_blank" rel="noopener" class="contact-item">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <div>
+                                <div class="contact-label">LinkedIn</div>
+                                <div class="contact-value">linkedin.com/in/nisar-uddin-7521b9283</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me what's on your mind..." required></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+
+                        <p class="form-status" id="form-status"></p>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <p>© 2026 Nisar Uddin. Built from scratch with HTML, CSS, and JavaScript.</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://github.com/nisaruddin-dev" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/nisar-uddin-7521b9283/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:numasters802@gmail.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ============================================================
+         SCROLL TO TOP BUTTON
+         ============================================================ -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
