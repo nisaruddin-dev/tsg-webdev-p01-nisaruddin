@@ -82,8 +82,6 @@ The entire site is a **single HTML page** with three files:
 ![Mobile view](./assets/screenshot-mobile.png)
 
 ---
-
-## Project Structure
 ## Project Structure
 
 ```
