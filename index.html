@@ -516,73 +516,111 @@
              ============================================================ -->
         <section id="contact" class="contact section">
             <div class="section-inner">
-                <p class="section-kicker">Contact</p>
-                <h2 class="section-title">Let's build something.</h2>
-                <p class="section-subtitle">
-                    I am currently open to internships and junior front-end roles.
-                    If you have an opportunity or just want to connect, my inbox is open.
-                </p>
+                <div class="section-head">
+                    <p class="section-kicker">Contact</p>
+                    <h2 class="section-title">Let's build something.</h2>
+                    <p class="section-subtitle">
+                        I am currently open to internships and junior front-end roles.
+                        If you have an opportunity or just want to connect, my inbox is open.
+                    </p>
+                </div>
 
                 <div class="contact-grid">
 
+                    <!-- Contact Info -->
                     <div class="contact-info">
+
                         <a href="mailto:numasters802@gmail.com" class="contact-item">
-                            <i class="fa-solid fa-envelope"></i>
-                            <div>
+                            <div class="contact-icon-wrap">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-body">
                                 <div class="contact-label">Email</div>
                                 <div class="contact-value">numasters802@gmail.com</div>
                             </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
                         </a>
 
                         <a href="https://github.com/nisaruddin-dev" target="_blank" rel="noopener" class="contact-item">
-                            <i class="fa-brands fa-github"></i>
-                            <div>
+                            <div class="contact-icon-wrap">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div class="contact-item-body">
                                 <div class="contact-label">GitHub</div>
                                 <div class="contact-value">github.com/nisaruddin-dev</div>
                             </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
                         </a>
 
                         <a href="https://linkedin.com/in/nisar-uddin-7521b9283/" target="_blank" rel="noopener" class="contact-item">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <div>
+                            <div class="contact-icon-wrap">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <div class="contact-item-body">
                                 <div class="contact-label">LinkedIn</div>
                                 <div class="contact-value">linkedin.com/in/nisar-uddin-7521b9283</div>
                             </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
                         </a>
+
+                        <div class="contact-response-note">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Replies within 24 hours</span>
+                        </div>
+
                     </div>
 
+                    <!-- Contact Form -->
                     <form class="contact-form" id="contact-form" novalidate>
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your name"
+                                autocomplete="name"
+                                required
+                            >
                             <span class="form-error" id="name-error"></span>
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="your.email@example.com"
+                                autocomplete="email"
+                                required
+                            >
                             <span class="form-error" id="email-error"></span>
                         </div>
 
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tell me what's on your mind..." required></textarea>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Tell me what's on your mind..."
+                                required
+                            ></textarea>
                             <span class="form-error" id="message-error"></span>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-full">
-                            Send Message
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                            <span class="btn-text">Send Message</span>
                             <i class="fa-solid fa-paper-plane"></i>
                         </button>
 
-                        <p class="form-status" id="form-status"></p>
+                        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
                     </form>
 
                 </div>
             </div>
         </section>
-
-    </main>
 
 
     <!-- ============================================================
