@@ -84,25 +84,28 @@ The entire site is a **single HTML page** with three files:
 ---
 
 ## Project Structure
+## Project Structure
+
+```
 tsg-webdev-p01-nisaruddin/
-├── index.html # Main HTML document
-├── styles.css # Complete design system
-├── script.js # Animations, dark mode, form validation
-├── README.md # This file
-├── .gitignore # Git ignore rules
+├── index.html                    # Main HTML document
+├── styles.css                    # Complete design system
+├── script.js                     # Animations, dark mode, form validation
+├── README.md                     # This file
+├── .gitignore                    # Git ignore rules
 └── assets/
-├── n-logo.png # Custom N logo (hero, nav, favicon)
-├── nisar-uddin-cv.pdf # Downloadable CV
-├── project-rahbar.png # Rahbar AI screenshot
-├── project-threatlens.png # ThreatLens screenshot
-├── project-resume-scanner.png # Resume Scanner screenshot
-├── project-neon-pulse.png # Neon Pulse screenshot
-├── project-memory-match.png # Memory Match Deluxe screenshot
-└── project-quetta-builders.png # Quetta Builders screenshot
-
-text
-
----
+    ├── n-logo.png                # Custom N logo (hero, nav, favicon)
+    ├── nisar-uddin-cv.pdf        # Downloadable CV
+    ├── project-rahbar.png        # Rahbar AI screenshot
+    ├── project-threatlens.png    # ThreatLens screenshot
+    ├── project-resume-scanner.png # Resume Scanner screenshot
+    ├── project-neon-pulse.png    # Neon Pulse screenshot
+    ├── project-memory-match.png  # Memory Match Deluxe screenshot
+    ├── project-quetta-builders.png # Quetta Builders screenshot
+    ├── screenshot-desktop.png    # Full page at 1440px
+    ├── screenshot-tablet.png     # Full page at 768px
+    └── screenshot-mobile.png     # Full page at 375px
+```
 
 ## Run Locally
 
