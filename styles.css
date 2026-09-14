@@ -1817,7 +1817,10 @@ strong {
         transparent 70%,
         rgba(168, 85, 247, 0.4) 100%
     );
-    -webkit-mask:
+        -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
