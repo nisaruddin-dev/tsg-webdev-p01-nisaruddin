@@ -1699,7 +1699,7 @@ strong {
 
 .skill-bar-fill {
     height: 100%;
-    width: 0%;
+    width: var(--skill-level, 0%);
     background: linear-gradient(
         90deg,
         var(--accent-primary) 0%,
@@ -2194,7 +2194,7 @@ strong {
 
 .footer {
     padding: var(--space-xl) var(--space-md) var(--space-lg);
-    background: linear-gradient(180deg, var(--bg-primary) 0%, #050810 100%);
+    background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-surface) 100%);
     border-top: 1px solid var(--border-color);
     position: relative;
 }
@@ -2386,4 +2386,122 @@ strong {
         grid-template-columns: 1fr;
         gap: var(--space-lg);
     }
+}
+/* ============================================================
+   25. ANIMATION SYSTEM (Section 11)
+   ============================================================ */
+
+/* Initial hidden states — elements start invisible and animate in.
+   These apply ONLY if JS is loaded AND user doesn't prefer reduced motion. */
+
+.js-loaded .anim-fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.js-loaded .anim-fade-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.js-loaded .anim-slide-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.js-loaded .anim-slide-left.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.js-loaded .anim-slide-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.js-loaded .anim-slide-right.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.js-loaded .anim-scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.js-loaded .anim-scale-in.is-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Skill bar reset — animation will fill these from 0 */
+.js-loaded .skill-bar-fill {
+    width: 0%;
+    transition: none;
+}
+
+/* Stagger delays for children */
+.js-loaded .stagger-1 { transition-delay: 0.1s; }
+.js-loaded .stagger-2 { transition-delay: 0.2s; }
+.js-loaded .stagger-3 { transition-delay: 0.3s; }
+.js-loaded .stagger-4 { transition-delay: 0.4s; }
+.js-loaded .stagger-5 { transition-delay: 0.5s; }
+.js-loaded .stagger-6 { transition-delay: 0.6s; }
+
+/* Disable animations if reduced motion is preferred */
+@media (prefers-reduced-motion: reduce) {
+    .js-loaded .anim-fade-up,
+    .js-loaded .anim-slide-left,
+    .js-loaded .anim-slide-right,
+    .js-loaded .anim-scale-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .js-loaded .skill-bar-fill {
+        width: var(--skill-level, 0%) !important;
+        transition: none;
+    }
+}
+
+/* Form validation states */
+.form-group input.invalid,
+.form-group textarea.invalid {
+    border-color: #EF4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.form-group input.valid,
+.form-group textarea.valid {
+    border-color: var(--accent-primary);
+}
+
+/* Submit button states */
+.contact-form .btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.contact-form .btn-primary .spinner {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(5, 8, 16, 0.3);
+    border-top-color: #050810;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
 }
